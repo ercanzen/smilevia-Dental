@@ -9,7 +9,7 @@ export default function ServiceDetail() {
   const { language } = useI18n()
   useEffect(() => {
     if (!item) return
-    document.title = `${translate(item.title, language)} in Antalya | Smilevia`
+    document.title = `${translate(item.title, language)} ${translate('in Antalya', language)} | Smilevia`
     let meta = document.querySelector<HTMLMetaElement>('meta[name="description"]')
     if (!meta) { meta = document.createElement('meta'); meta.name = 'description'; document.head.appendChild(meta) }
     meta.content = translate(item.summary, language)

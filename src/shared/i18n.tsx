@@ -510,6 +510,7 @@ const translations: Record<string, Record<Exclude<Language, 'de'>, string>> = {
   'Kontaktaufnahme über das': { en: 'Get in touch via the', fr: 'Nous contacter via le', it: 'Contattaci tramite il' },
   'Eine vollständige Postadresse wird vor dem öffentlichen Start ergänzt. Aus organisatorischen Gründen erfolgt der Erstkontakt ausschliesslich über das Kontaktformular.': { en: 'A complete postal address will be added before public launch. For organisational reasons, initial contact is made exclusively via the contact form.', fr: 'Une adresse postale complète sera ajoutée avant le lancement public. Pour des raisons organisationnelles, le premier contact se fait exclusivement via le formulaire de contact.', it: 'Un indirizzo postale completo sarà aggiunto prima del lancio pubblico. Per motivi organizzativi, il primo contatto avviene esclusivamente tramite il modulo di contatto.' },
   'Beratungsgespräch mit Röntgenbild in der Partnerklinik': { en: 'Consultation with an X-ray at the partner clinic', fr: 'Consultation avec une radiographie à la clinique partenaire', it: 'Consulenza con radiografia presso la clinica partner' },
+  'in Antalya': { en: 'in Antalya', fr: 'à Antalya', it: 'ad Antalya' },
 }
 
 function sourceOf(value: string): string {
