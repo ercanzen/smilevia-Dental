@@ -6,12 +6,13 @@ export default function Booking() {
   const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error' | 'unconfigured'>('idle')
   async function submitRequest(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
-    const endpoint = import.meta.env.VITE_FORM_ENDPOINT
-    if (!endpoint) { setStatus('unconfigured'); return }
+    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY
+    if (!accessKey) { setStatus('unconfigured'); return }
     setStatus('sending')
     try {
-      const response = await fetch(endpoint, { method: 'POST', body: new FormData(event.currentTarget), headers: { Accept: 'application/json' } })
-      if (!response.ok) throw new Error('Submission failed')
+      const response = await fetch('https://api.web3forms.com/submit', { method: 'POST', body: new FormData(event.currentTarget), headers: { Accept: 'application/json' } })
+      const result = await response.json()
+      if (!response.ok || !result.success) throw new Error('Submission failed')
       event.currentTarget.reset(); setStatus('success')
     } catch { setStatus('error') }
   }
@@ -27,7 +28,9 @@ export default function Booking() {
 
         <div className="grid gap-5 lg:grid-cols-[1fr_360px]">
           <form onSubmit={submitRequest} className="glass rounded-[36px] p-6 md:p-10">
-            <input type="hidden" name="_subject" value="Neue Behandlungsanfrage – Smilevia Website"/>
+            <input type="hidden" name="access_key" value={import.meta.env.VITE_WEB3FORMS_ACCESS_KEY}/>
+            <input type="hidden" name="subject" value="Neue Behandlungsanfrage – Smilevia Website"/>
+            <input type="checkbox" name="botcheck" className="hidden" tabIndex={-1} autoComplete="off"/>
             <div className="grid gap-6 md:grid-cols-2">
               <label className="field"><span>Vor- und Nachname *</span><input name="name" autoComplete="name" required placeholder="Ihr Name" /></label>
               <label className="field"><span>Telefon / WhatsApp *</span><input name="phone" autoComplete="tel" required type="tel" placeholder="+41 ..." /></label>

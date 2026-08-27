@@ -1,8 +1,7 @@
 /// <reference types="vite/client" />
 
 interface ImportMetaEnv {
-  readonly VITE_FORM_ENDPOINT?: string
-  readonly VITE_CONTACT_ENDPOINT?: string
+  readonly VITE_WEB3FORMS_ACCESS_KEY?: string
 }
 
 interface ImportMeta {
