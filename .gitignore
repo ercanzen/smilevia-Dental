@@ -1,0 +1,19 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+*.bak
+
+# Not part of the Smilevia web app - unrelated / private material in this folder
+.reference/
+ai-video-tools/
+dental-health-mobile-design/
+ANTALYA_DENTALS_CONTENT.md
+SMILEVIA_ISBIRLIGI_SOZLESMESI_TASLAK.md
+SMILEVIA_UYGULAMA_PLANI.md
+Smilevia_Is_Birligi_Sozlesmesi_Taslak.docx
+Smilevia_Is_Birligi_Sozlesmesi_Taslak.pdf
