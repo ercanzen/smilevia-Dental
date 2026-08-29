@@ -4,7 +4,7 @@ import { MotionBackground } from './MotionBackground'
 export function PremiumHero() {
   return <section className="premium-hero px-3 pb-16 pt-24 md:px-6 md:pb-24 md:pt-28">
     <div className="relative mx-auto min-h-[760px] max-w-[1480px] overflow-hidden rounded-[32px] bg-[#2c4956] md:rounded-[48px]">
-      <video autoPlay muted loop playsInline preload="auto" aria-hidden="true" className="absolute inset-0 h-full w-full object-cover object-top opacity-80 motion-reduce:hidden"><source src="/smilevia-media/smilevia-hero-loop-v2.mp4" type="video/mp4"/></video>
+      <video autoPlay muted loop playsInline preload="auto" aria-hidden="true" className="absolute inset-0 h-full w-full object-cover object-center opacity-80 motion-reduce:hidden"><source src="/smilevia-media/smilevia-hero-loop-v2.mp4" type="video/mp4"/></video>
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(44,73,86,.95)_0%,rgba(44,73,86,.78)_45%,rgba(44,73,86,.4)_78%,rgba(44,73,86,.25)_100%)]"/>
       <MotionBackground/>
       <div className="absolute inset-0 opacity-40 [background-image:radial-gradient(circle_at_20%_20%,rgba(77,168,255,.28),transparent_28%),radial-gradient(circle_at_85%_15%,rgba(79,111,214,.22),transparent_22%)]"/>
