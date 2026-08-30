@@ -11,7 +11,7 @@ export function PremiumHero() {
 
       <div className="relative z-10 flex min-h-[760px] max-w-[680px] flex-col justify-center px-7 py-28 text-white md:px-16 lg:px-20">
         <h1 className="text-[clamp(2.25rem,9vw,7.2rem)] font-black leading-[.9] tracking-[-.04em] md:leading-[.79] md:tracking-[-.072em]">Ein schöneres Lächeln,<br/><span className="hero-script font-normal italic text-[#4da8ff]">persönlich</span><br/>koordiniert.</h1>
-        <p className="mt-8 max-w-xl text-base leading-7 text-white/85 md:text-lg">Persönliche Begleitung für Ihre Zahnbehandlung in Antalya – von der ersten Anfrage bis zur Rückreise, mit einem festen Ansprechpartner aus der Schweiz.</p>
+        <p className="mt-8 max-w-xl text-base leading-7 text-white/85 md:text-lg">Persönliche Begleitung für Ihre Zahnbehandlung in Antalya, Türkei – von der ersten Anfrage bis zur Rückreise, mit einem festen Ansprechpartner aus der Schweiz.</p>
         <div className="mt-9 flex flex-col gap-3 sm:flex-row"><Link to="/randevu-al" className="premium-button bg-[#4da8ff] text-[#0a1130]">Kostenlose Anfrage <span>↗</span></Link><Link to="/hakkimizda" className="premium-button border border-white/20 bg-white/10 text-white backdrop-blur-xl">So begleiten wir Sie</Link></div>
       </div>
 

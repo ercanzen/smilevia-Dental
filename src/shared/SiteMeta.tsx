@@ -5,7 +5,7 @@ import { swissLocations } from './swissLocations'
 import { translate, useI18n } from './i18n'
 
 const pages: Record<string, { title: string; description: string; keywords: string }> = {
-  '/': { title: 'Zahnbehandlung in Antalya für Patienten aus der Schweiz | Smilevia', description: 'Persönliche Koordination für Zahnimplantate, Veneers und Zahnersatz in Antalya – für Patientinnen und Patienten aus der Schweiz.', keywords: [...treatmentTerms, ...serviceLocationKeywords].join(', ') },
+  '/': { title: 'Zahnbehandlung in Antalya, Türkei für Patienten aus der Schweiz | Smilevia', description: 'Persönliche Koordination für Zahnimplantate, Veneers und Zahnersatz in Antalya, Türkei – für Patientinnen und Patienten aus der Schweiz.', keywords: [...treatmentTerms, ...serviceLocationKeywords].join(', ') },
   '/hakkimizda': { title: 'Über Smilevia | Persönliche Patientenkoordination', description: 'Wie Smilevia Patienten aus der Schweiz bei der Organisation einer Zahnbehandlung in Antalya begleitet.', keywords: metaKeywordsFor(['Smilevia', 'Patientenkoordination Schweiz', ...swissLocations]) },
   '/hizmetlerimiz': { title: 'Zahnbehandlungen in Antalya | Smilevia', description: 'Informationen zu Zahnimplantaten, Veneers, Zahnaufhellung, Kieferorthopädie und weiteren Zahnbehandlungen in Antalya.', keywords: metaKeywordsFor(['Zahnbehandlungen Antalya', ...swissLocations]) },
   '/dis-hekimligi': { title: 'Medizinisches Netzwerk in Antalya | Smilevia', description: 'Informationen zur Partnerklinik, medizinischen Verantwortung und Begleitung durch Smilevia.', keywords: metaKeywordsFor(['Partnerklinik Antalya', 'Zahnärzte Antalya']) },
