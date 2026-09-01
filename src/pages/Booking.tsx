@@ -9,11 +9,11 @@ export default function Booking() {
     const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY
     if (!accessKey) { setStatus('unconfigured'); return }
     setStatus('sending')
+    const form = event.currentTarget
     try {
-      const response = await fetch('https://api.web3forms.com/submit', { method: 'POST', body: new FormData(event.currentTarget), headers: { Accept: 'application/json' } })
-      const result = await response.json()
-      if (!response.ok || !result.success) throw new Error('Submission failed')
-      event.currentTarget.reset(); setStatus('success')
+      const response = await fetch('https://api.web3forms.com/submit', { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } })
+      if (!response.ok) throw new Error('Submission failed')
+      form.reset(); setStatus('success')
     } catch { setStatus('error') }
   }
 
