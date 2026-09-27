@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom'
+import { analyticsEnabled } from './analytics'
+import { openCookieSettings } from './CookieBanner'
 
 export function Footer() {
   return <footer className="px-6 py-10"><div className="mx-auto flex max-w-[1320px] flex-col justify-between gap-5 border-t border-[#dfe6f5] pt-8 text-sm text-[#596378] md:flex-row">
@@ -7,6 +9,6 @@ export function Footer() {
       <b className="text-base text-[#0a1130]"><span className="text-[#0a1130]">SMILE</span><span className="text-[#4f6fd6]">VIA</span></b>
     </div>
     <p>© 2026 · Unabhängige Patientenkoordination</p>
-    <div className="flex gap-5"><Link to="/datenschutz">Datenschutz</Link><Link to="/impressum">Impressum</Link><Link to="/iletisim">Kontakt</Link></div>
+    <div className="flex gap-5"><Link to="/datenschutz">Datenschutz</Link><Link to="/impressum">Impressum</Link>{analyticsEnabled && <button type="button" onClick={openCookieSettings}>Cookie-Einstellungen</button>}<Link to="/iletisim">Kontakt</Link></div>
   </div></footer>
 }

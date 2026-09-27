@@ -511,6 +511,12 @@ const translations: Record<string, Record<Exclude<Language, 'de'>, string>> = {
   'Eine vollständige Postadresse wird vor dem öffentlichen Start ergänzt. Aus organisatorischen Gründen erfolgt der Erstkontakt ausschliesslich über das Kontaktformular.': { en: 'A complete postal address will be added before public launch. For organisational reasons, initial contact is made exclusively via the contact form.', fr: 'Une adresse postale complète sera ajoutée avant le lancement public. Pour des raisons organisationnelles, le premier contact se fait exclusivement via le formulaire de contact.', it: 'Un indirizzo postale completo sarà aggiunto prima del lancio pubblico. Per motivi organizzativi, il primo contatto avviene esclusivamente tramite il modulo di contatto.' },
   'Beratungsgespräch mit Röntgenbild in der Partnerklinik': { en: 'Consultation with an X-ray at the partner clinic', fr: 'Consultation avec une radiographie à la clinique partenaire', it: 'Consulenza con radiografia presso la clinica partner' },
   'in Antalya': { en: 'in Antalya', fr: 'à Antalya', it: 'ad Antalya' },
+  'Cookies für Besucherstatistik': { en: 'Cookies for visitor statistics', fr: 'Cookies de statistiques de visite', it: 'Cookie per le statistiche dei visitatori' },
+  'Mit Ihrer Einwilligung verwenden wir Google Analytics, um anonym zu messen, wie viele Personen unsere Website besuchen. Ihre Wahl können Sie jederzeit in der Fusszeile ändern.': { en: 'With your consent, we use Google Analytics to measure anonymously how many people visit our website. You can change your choice at any time in the footer.', fr: 'Avec votre consentement, nous utilisons Google Analytics pour mesurer de manière anonyme combien de personnes visitent notre site. Vous pouvez modifier votre choix à tout moment dans le pied de page.', it: 'Con il vostro consenso utilizziamo Google Analytics per misurare in forma anonima quante persone visitano il nostro sito. Potete modificare la vostra scelta in qualsiasi momento nel piè di pagina.' },
+  'Akzeptieren': { en: 'Accept', fr: 'Accepter', it: 'Accetta' },
+  'Ablehnen': { en: 'Decline', fr: 'Refuser', it: 'Rifiuta' },
+  'Cookie-Einstellungen': { en: 'Cookie settings', fr: 'Paramètres des cookies', it: 'Impostazioni cookie' },
+  'Besucherstatistik (Google Analytics)': { en: 'Visitor statistics (Google Analytics)', fr: 'Statistiques de visite (Google Analytics)', it: 'Statistiche dei visitatori (Google Analytics)' },
 }
 
 function sourceOf(value: string): string {

@@ -13,6 +13,7 @@ import BlogDetail from './pages/BlogDetail'
 import { Testimonials } from './shared/Testimonials'
 import { SiteMeta } from './shared/SiteMeta'
 import { Footer } from './shared/Footer'
+import { CookieBanner } from './shared/CookieBanner'
 import { Imprint, NotFound, Privacy } from './pages/Legal'
 
 export default function App() {
@@ -37,6 +38,7 @@ export default function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
+      <CookieBanner />
     </BrowserRouter></I18nProvider>
   )
 }
